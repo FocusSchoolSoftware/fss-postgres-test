@@ -1,0 +1,12 @@
+<template name="students">
+	<h3>Add a Student</h3>
+	<form class="add-student">
+		<input name="name" placeholder="Student Name">
+	</form>
+	<h3>Students:</h3>
+	<ul>
+		{{#each students}}
+			<li>{{name}}</li>
+		{{/each}}
+	</ul>
+</template>
